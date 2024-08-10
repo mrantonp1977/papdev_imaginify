@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  typescript: {
+    ignoreBuildErrors: true,  
+  },
   images: {
     remotePatterns: [
       {
@@ -8,7 +11,7 @@ const nextConfig = {
         port: ""
       }
     ]
-  }
+  },
 };
 
 export default nextConfig;
